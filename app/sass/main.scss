@@ -1,0 +1,75 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "normalize";
+@import "susy";
+@import "breakpoint";
+@import "compass";
+
+/* ***************************susy*********************************** */
+$susy: (
+  math: fluid,
+  output: float,
+  gutter-position: after,
+  container: 1024px,
+  columns: 12,
+  gutters: .25,
+	global-box-sizing: border-box,
+
+  debug: (
+    image: show,
+    color: rgba(#66f, .25),
+    output: overlay,
+    toggle: top right,
+  )
+);
+/* ****************************************************************** */
+
+/* typography */
+@font-face {
+    font-family: 'Andika';
+    src: url( '../fonts/andika-r.eot');
+    src: local('Andika'), url( '../fonts/andika-r.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/andika-r.woff') format('woff'),
+         url('../fonts/andika-r.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Scratch';
+    src: url( '../fonts/Sprite Graffiti Shadow.otf');
+}
+/* end of typography */
+
+body {
+	background: #ccc;
+	font-family: 'Andika';
+}
+
+/* ********************use variable*******************/
+$suka_green: #06FF00;
+/* ********************end use variable***************/
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+	margin: 20px auto;
+	background: #B8B3B3 url('../img/cover_photo_291189_1426039340.png');
+	font-family: 'Andika';
+	color: #fff;
+}
+
+#container {
+	@include container;
+	@include clearfix;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	//background-color: #FAF8F8;
+}
