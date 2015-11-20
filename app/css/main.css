@@ -1,0 +1,547 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/*! normalize.css v3.0.0 | MIT License | git.io/normalize */
+/*! normalize.css v3.0.0 | HTML5 Display Definitions | MIT License | git.io/normalize */
+/* line 9, ../../../../../../.rvm/gems/ruby-2.2.3/gems/compass-normalize-1.5/stylesheets/normalize/_html5.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/* line 29, ../../../../../../.rvm/gems/ruby-2.2.3/gems/compass-normalize-1.5/stylesheets/normalize/_html5.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+/* line 40, ../../../../../../.rvm/gems/ruby-2.2.3/gems/compass-normalize-1.5/stylesheets/normalize/_html5.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* line 47, ../../../../../../.rvm/gems/ruby-2.2.3/gems/compass-normalize-1.5/stylesheets/normalize/_html5.scss */
+[hidden],
+template {
+  display: none;
+}
+
+/*! normalize.css v3.0.0 | Base | MIT License | git.io/normalize */
+/* line 11, ../../../../../../.rvm/gems/ruby-2.2.3/gems/compass-normalize-1.5/stylesheets/normalize/_base.scss */
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* line 19, ../../../../../../.rvm/gems/ruby-2.2.3/gems/compass-normalize-1.5/stylesheets/normalize/_base.scss */
+body {
+  margin: 0;
+}
+
+/*! normalize.css v3.0.0 | Links | MIT License | git.io/normalize */
+/* line 9, ../../../../../../.rvm/gems/ruby-2.2.3/gems/compass-normalize-1.5/stylesheets/normalize/_links.scss */
+a {
+  background: transparent;
+}
+
+/* line 15, ../../../../../../.rvm/gems/ruby-2.2.3/gems/compass-normalize-1.5/stylesheets/normalize/_links.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/*! normalize.css v3.0.0 | Typography | MIT License | git.io/normalize */
+/* line 9, ../../../../../../.rvm/gems/ruby-2.2.3/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 15, ../../../../../../.rvm/gems/ruby-2.2.3/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/* line 22, ../../../../../../.rvm/gems/ruby-2.2.3/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
+dfn {
+  font-style: italic;
+}
+
+/* line 29, ../../../../../../.rvm/gems/ruby-2.2.3/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* line 36, ../../../../../../.rvm/gems/ruby-2.2.3/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/* line 43, ../../../../../../.rvm/gems/ruby-2.2.3/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
+small {
+  font-size: 80%;
+}
+
+/* line 49, ../../../../../../.rvm/gems/ruby-2.2.3/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 57, ../../../../../../.rvm/gems/ruby-2.2.3/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 61, ../../../../../../.rvm/gems/ruby-2.2.3/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/*! normalize.css v3.0.0 | Embedded Content | MIT License | git.io/normalize */
+/* line 9, ../../../../../../.rvm/gems/ruby-2.2.3/gems/compass-normalize-1.5/stylesheets/normalize/_embeds.scss */
+img {
+  border: 0;
+}
+
+/* line 15, ../../../../../../.rvm/gems/ruby-2.2.3/gems/compass-normalize-1.5/stylesheets/normalize/_embeds.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/*! normalize.css v3.0.0 | Figures | MIT License | git.io/normalize */
+/* line 9, ../../../../../../.rvm/gems/ruby-2.2.3/gems/compass-normalize-1.5/stylesheets/normalize/_groups.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/* line 15, ../../../../../../.rvm/gems/ruby-2.2.3/gems/compass-normalize-1.5/stylesheets/normalize/_groups.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/* line 23, ../../../../../../.rvm/gems/ruby-2.2.3/gems/compass-normalize-1.5/stylesheets/normalize/_groups.scss */
+pre {
+  overflow: auto;
+}
+
+/* line 29, ../../../../../../.rvm/gems/ruby-2.2.3/gems/compass-normalize-1.5/stylesheets/normalize/_groups.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/*! normalize.css v3.0.0 | Forms | MIT License | git.io/normalize */
+/* line 15, ../../../../../../.rvm/gems/ruby-2.2.3/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+/* line 27, ../../../../../../.rvm/gems/ruby-2.2.3/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+button {
+  overflow: visible;
+}
+
+/* line 36, ../../../../../../.rvm/gems/ruby-2.2.3/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/* line 47, ../../../../../../.rvm/gems/ruby-2.2.3/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+/* line 57, ../../../../../../.rvm/gems/ruby-2.2.3/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/* line 64, ../../../../../../.rvm/gems/ruby-2.2.3/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 73, ../../../../../../.rvm/gems/ruby-2.2.3/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+input {
+  line-height: normal;
+}
+
+/* line 83, ../../../../../../.rvm/gems/ruby-2.2.3/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* line 93, ../../../../../../.rvm/gems/ruby-2.2.3/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/* line 102, ../../../../../../.rvm/gems/ruby-2.2.3/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 113, ../../../../../../.rvm/gems/ruby-2.2.3/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 120, ../../../../../../.rvm/gems/ruby-2.2.3/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/* line 129, ../../../../../../.rvm/gems/ruby-2.2.3/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+legend {
+  border: 0;
+  padding: 0;
+}
+
+/* line 136, ../../../../../../.rvm/gems/ruby-2.2.3/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+textarea {
+  overflow: auto;
+}
+
+/* line 143, ../../../../../../.rvm/gems/ruby-2.2.3/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+optgroup {
+  font-weight: bold;
+}
+
+/*! normalize.css v3.0.0 | Tables | MIT License | git.io/normalize */
+/* line 9, ../../../../../../.rvm/gems/ruby-2.2.3/gems/compass-normalize-1.5/stylesheets/normalize/_tables.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 14, ../../../../../../.rvm/gems/ruby-2.2.3/gems/compass-normalize-1.5/stylesheets/normalize/_tables.scss */
+td,
+th {
+  padding: 0;
+}
+
+/* ****************************************************************** */
+/* ****************************************************************** */
+/* typography */
+@font-face {
+  font-family: 'Andika';
+  src: url("../../fonts/andika-r.eot");
+  src: local("Andika"), url("../../fonts/andika-r.eot?#iefix") format("embedded-opentype"), url("../../fonts/andika-r.woff") format("woff"), url("../../fonts/andika-r.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Scratch';
+  src: url("../../fonts/Sprite Graffiti Shadow.otf");
+}
+/* end of typography */
+/* ********************use variable*******************88 */
+/* ********************end use variable*******************88 */
+/* line 51, sass/main.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 57, sass/main.scss */
+body {
+  margin: 20px auto;
+  background: #B8B3B3 url("../../img/cover_photo_291189_1426039340.png");
+  font-family: 'Andika';
+  color: #fff;
+}
+
+/* line 64, sass/main.scss */
+#container {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  *zoom: 1;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+/* line 12, ../../../../../../.rvm/gems/ruby-2.2.3/gems/susy-2.2.6/sass/susy/output/support/_clearfix.scss */
+#container:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 65, ../../../../../../.rvm/gems/ruby-2.2.3/gems/susy-2.2.6/sass/susy/language/susy/_background.scss */
+head {
+  display: block;
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  z-index: 999;
+  color: #333;
+  background: rgba(255, 255, 255, 0.25);
+}
+/* line 66, ../../../../../../.rvm/gems/ruby-2.2.3/gems/susy-2.2.6/sass/susy/language/susy/_background.scss */
+head:before {
+  content: "|||";
+  display: block;
+  padding: 5px 10px;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+/* line 67, ../../../../../../.rvm/gems/ruby-2.2.3/gems/susy-2.2.6/sass/susy/language/susy/_background.scss */
+head:hover {
+  background: rgba(255, 255, 255, 0.5);
+  color: red;
+}
+/* line 71, ../../../../../../.rvm/gems/ruby-2.2.3/gems/susy-2.2.6/sass/susy/language/susy/_background.scss */
+head:hover ~ #container, head:hover ~ body #container {
+  position: relative;
+}
+/* line 74, ../../../../../../.rvm/gems/ruby-2.2.3/gems/susy-2.2.6/sass/susy/language/susy/_background.scss */
+head:hover ~ #container:before, head:hover ~ body #container:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  content: " ";
+  z-index: 998;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzY2NjZmZiIgc3RvcC1vcGFjaXR5PSIwLjI1Ii8+PHN0b3Agb2Zmc2V0PSI4MCUiIHN0b3AtY29sb3I9IiNiM2IzZmYiIHN0b3Atb3BhY2l0eT0iMC4yNSIvPjxzdG9wIG9mZnNldD0iODAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA=='), url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuNSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(102, 102, 255, 0.25)), color-stop(80%, rgba(179, 179, 255, 0.25)), color-stop(80%, rgba(0, 0, 0, 0))), -webkit-gradient(linear, 50% 0%, 50% 1, color-stop(100%, rgba(0, 0, 0, 0.5)), color-stop(100%, rgba(0, 0, 0, 0)));
+  background-image: -moz-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, rgba(0, 0, 0, 0) 80%), -moz-linear-gradient(top, rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0) 1px);
+  background-image: -webkit-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, rgba(0, 0, 0, 0) 80%), -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0) 1px);
+  background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, rgba(0, 0, 0, 0) 80%), linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0) 1px);
+  background-size: 8.47458%, 100% 24px;
+  background-origin: content-box, border-box;
+  background-clip: content-box, border-box;
+  background-position: left top;
+}
+
+/* line 72, sass/main.scss */
+#header {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  overflow: hidden;
+  *zoom: 1;
+  border-bottom: 2px solid #06FF00;
+  padding-bottom: 20px;
+}
+/* line 78, sass/main.scss */
+#header #logo {
+  width: 49.15254%;
+  float: left;
+  margin-right: 1.69492%;
+  padding-left: 10px;
+  height: 105px;
+  background: url("../../img/logo2.png") no-repeat;
+}
+/* line 83, sass/main.scss */
+#header #logo h1 {
+  margin-left: 120px;
+  margin-top: 40px;
+  font-family: 'Scratch';
+}
+/* line 88, sass/main.scss */
+#header #logo h2 {
+  margin-left: 170px;
+  margin-bottom: 20px;
+}
+/* line 93, sass/main.scss */
+#header #main_menu {
+  width: 49.15254%;
+  float: right;
+  margin-right: 0;
+  margin-top: 15px;
+}
+/* line 96, sass/main.scss */
+#header #main_menu .button {
+  display: inline-block;
+}
+/* line 99, sass/main.scss */
+#header #main_menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5em;
+  margin-right: 20px;
+  padding: 0 10px;
+}
+/* line 107, sass/main.scss */
+#header #main_menu a:hover {
+  color: #06FF00;
+}
+
+/* line 113, sass/main.scss */
+#middle_block {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  overflow: hidden;
+  *zoom: 1;
+  margin-top: 20px;
+  border-bottom: 2px solid #06FF00;
+  padding-bottom: 20px;
+}
+/* line 119, sass/main.scss */
+#middle_block #slider {
+  width: 74.57627%;
+  float: left;
+  margin-right: 1.69492%;
+}
+/* line 121, sass/main.scss */
+#middle_block #slider #self_slider {
+  width: 91.52542%;
+  float: left;
+  margin-right: 1.69492%;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  margin-left: 15px;
+  height: 200px;
+  background: url("../../img/dosimeter-622511_1280.jpg") center;
+}
+/* line 129, sass/main.scss */
+#middle_block #social {
+  width: 23.72881%;
+  float: right;
+  margin-right: 0;
+  margin-top: 40px;
+}
+/* line 133, sass/main.scss */
+#middle_block #social .icon {
+  display: inline-block;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* line 140, sass/main.scss */
+#main_content {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  overflow: hidden;
+  *zoom: 1;
+  border-bottom: 2px solid #06FF00;
+}
+/* line 144, sass/main.scss */
+#main_content #sidebar {
+  width: 23.72881%;
+  float: left;
+  margin-right: 1.69492%;
+}
+/* line 146, sass/main.scss */
+#main_content #sidebar ul {
+  list-style: none;
+}
+/* line 149, sass/main.scss */
+#main_content #sidebar a {
+  text-decoration: none;
+  font-size: 1.3em;
+  color: #fff;
+}
+/* line 154, sass/main.scss */
+#main_content #sidebar a:hover {
+  color: #06FF00;
+}
+/* line 158, sass/main.scss */
+#main_content #content {
+  width: 74.57627%;
+  float: right;
+  margin-right: 0;
+}
+/* line 160, sass/main.scss */
+#main_content #content #self_content {
+  width: 91.52542%;
+  float: left;
+  margin-right: 1.69492%;
+  font-size: 1.2em;
+  text-align: justify;
+}
+
+/* line 168, sass/main.scss */
+#footer {
+  clear: both;
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+/* line 170, sass/main.scss */
+#footer #create_by {
+  width: 49.15254%;
+  float: left;
+  margin-right: 1.69492%;
+}
+/* line 172, sass/main.scss */
+#footer #create_by a {
+  text-decoration: none;
+  color: #fff;
+}
+/* line 176, sass/main.scss */
+#footer #create_by a:hover {
+  color: #06FF00;
+}
+/* line 180, sass/main.scss */
+#footer #copyright {
+  width: 49.15254%;
+  float: right;
+  margin-right: 0;
+}
+/* line 182, sass/main.scss */
+#footer #copyright span {
+  float: right;
+}
