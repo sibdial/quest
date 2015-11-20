@@ -1,3 +1,4 @@
+oldindex.php
 <?php
 defined('_JEXEC') or die;
 
@@ -61,13 +62,41 @@ $doc->addStyleSheet($this->baseurl . '/templates/' . $this->template . '/app/css
 	<div id="container">
 		<div id="header">
 			<div id="logo">
-				<h1>Элемент</h1>
-				<h2>Win of Mind</h2>
+				<a href="<?= JUri::base(TRUE);?>"><h1>Победа разума</h1></a>
 			</div>
-			<div id="contacts">
-				<h2>г.Новокузнецк ул.Кирова, XXX</h2>
-				<h3>тел. 8-923-466-92-52</h3>
+			<div id="main_menu">
+				<jdoc:include type="modules" name="position-0"/>
 			</div>
+		</div>
+		<div id="middle_block">
+			<div id="slider">
+				<div id="self_slider">
+				<jdoc:include type="modules" name="position-1"/>
+				</div>
+			</div>
+			<div id="social">
+				<div class="icon vk"><a href="#"><img src="<?= JUri::base(TRUE) . "/templates/" . $doc->template;?>/app/img/vk.png" height="50" width="50"></a></div>
+				<div class="icon odnoklassniki"><a href="#"><img src="<?= JUri::base(TRUE) . "/templates/" . $doc->template;?>/app/img/odnoklassniki.png" height="50" width="50"></a></div>
+				<div class="icon instagramm"><a href="#"><img src="<?= JUri::base(TRUE) . "/templates/" . $doc->template;?>/app/img/instagram.png" height="50" width="50"></a></div>
+				<div id="contacts">Наш адрес: ул.Попкина 24 <br> Телефон: 89234669252</div>
+
+			</div>
+		</div>
+		<div id="main_content">
+			<div id="sidebar">
+				<ul>
+					<li><a href="#">Quest rooms</a></li>
+					<li><a href="#">Что же вас ждет</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</div>
+			<div id="content">
+				<jdoc:include type="component"/>
+			</div>
+		</div>
+		<div id="footer">
+			<div id="create_by"><span><a href="https://vk.com/d.a.sibiryakov" target="blank">.DimaS.</a></span></div>
+			<div id="copyright"><span>&copy; SibDiAl 2015</span></div>
 		</div>
 	</div>
 </body>

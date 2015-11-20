@@ -322,3 +322,95 @@ head:hover ~ #container:before, head:hover ~ body #container:before {
   background-clip: content-box, border-box;
   background-position: left top;
 }
+
+#header {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  overflow: hidden;
+  *zoom: 1;
+  border-bottom: 2px solid #06FF00;
+}
+#header #logo {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  overflow: hidden;
+  *zoom: 1;
+  padding-left: 10px;
+  height: 105px;
+  background: url("../img/logo2.png") no-repeat;
+}
+#header #logo h1 {
+  margin-left: 120px;
+  margin-top: 10px;
+  font-family: 'Scratch';
+}
+#header #logo h2 {
+  margin-left: 200px;
+  margin-bottom: 10px;
+  font-family: 'Scratch';
+  font-size: 1em;
+}
+#header #contacts {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  overflow: hidden;
+  *zoom: 1;
+}
+#header #contacts h2 {
+  font-size: 0.8em;
+  margin-left: 10px;
+}
+#header #contacts h3 {
+  font-size: 0.8em;
+  margin-left: 170px;
+}
+
+@media (min-width: 720px) {
+  #header {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    overflow: hidden;
+    *zoom: 1;
+    border-bottom: 2px solid #06FF00;
+    padding-bottom: 20px;
+  }
+  #header #logo {
+    width: 49.15254%;
+    float: left;
+    margin-right: 1.69492%;
+    padding-left: 10px;
+    height: 105px;
+    background: url("../img/logo2.png") no-repeat;
+  }
+  #header #logo h1 {
+    margin-left: 120px;
+    margin-top: 40px;
+    font-family: 'Scratch';
+  }
+  #header #logo h2 {
+    margin-left: 170px;
+    margin-bottom: 20px;
+    font-family: 'Scratch';
+  }
+  #header #logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    margin-right: 20px;
+    padding: 0 10px;
+  }
+  #header #contacts {
+    width: 49.15254%;
+    float: right;
+    margin-right: 0;
+    margin-top: 15px;
+  }
+}

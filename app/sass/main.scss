@@ -73,3 +73,80 @@ body {
 	padding-bottom: 5px;
 	//background-color: #FAF8F8;
 }
+
+#header {
+		@include span(12);
+		@include clearfix;
+		border-bottom: 2px solid $suka_green;
+
+		#logo {
+			@include span(12);
+			@include clearfix;
+			padding-left: 10px;
+			height: 105px;
+			background: url('../img/logo2.png') no-repeat;
+			h1 {
+				margin-left: 120px;
+				margin-top: 10px;
+				font-family: 'Scratch';
+			}
+			h2 {
+				margin-left: 200px;
+				margin-bottom: 10px;
+				font-family: 'Scratch';
+				font-size: 1em;
+			}
+		}
+
+		#contacts {
+			@include span(12);
+			@include clearfix;
+			//margin-top: 15px;
+			h2 {
+				font-size: 0.8em;
+				margin-left: 10px;
+			}
+			h3 {
+				font-size: 0.8em;
+				margin-left: 170px;
+			}
+		}
+}
+
+#header {
+	@include breakpoint(720px){
+		@include span(12);
+		@include clearfix;
+		border-bottom: 2px solid $suka_green;
+		padding-bottom: 20px;
+
+		#logo {
+			@include span(6);
+			padding-left: 10px;
+			height: 105px;
+			background: url('../img/logo2.png') no-repeat;
+			h1 {
+				margin-left: 120px;
+				margin-top: 40px;
+				font-family: 'Scratch';
+			}
+			h2{
+				margin-left: 170px;
+				margin-bottom: 20px;
+				font-family: 'Scratch';
+			}
+			a {
+				color: #fff;
+				text-decoration: none;
+				font-size: 1em;
+				margin-right: 20px;
+				padding: 0 10px;
+			}
+		}
+
+		#contacts {
+			@include span(6 last);
+			margin-top: 15px;
+		}
+	}
+}
