@@ -8,16 +8,11 @@ gulp.task('connect', function() {
     livereload: true,
     port: '9999'
   });
-  opn('http://bunker.loc')
-});
-
-gulp.task('html', function () {
-  gulp.src('./app/*.html')
-    .pipe(connect.reload());
+  opn('http://jbunker.loc')
 });
 
 gulp.task('php', function () {
-  gulp.src('./app/*.php')
+  gulp.src('*.php')
     .pipe(connect.reload());
 });
 
@@ -32,9 +27,8 @@ gulp.task('js', function () {
 });
 
 gulp.task('watch', function () {
-   gulp.watch(['./app/*.html'], ['html']);
-   gulp.watch(['./app/*.php'], ['php']);
-   gulp.watch(['./app/css/main.css'], ['css']);
+   gulp.watch(['*.php'], ['php']);
+   gulp.watch(['./app/css/*.css'], ['css']);
    gulp.watch(['./app/js/*.js'], ['js']);
 });
 

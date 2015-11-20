@@ -276,13 +276,13 @@ th {
 @font-face {
   font-family: 'Andika';
   src: url("../../fonts/andika-r.eot");
-  src: local("Andika"), url("../../fonts/andika-r.eot?#iefix") format("embedded-opentype"), url("../../fonts/andika-r.woff") format("woff"), url("../../fonts/andika-r.ttf") format("truetype");
+  src: local("Andika"), url("../../app/fonts/andika-r.eot?#iefix") format("embedded-opentype"), url("../../app/fonts/andika-r.woff") format("woff"), url("../../app/fonts/andika-r.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Scratch';
-  src: url("../../fonts/Sprite Graffiti Shadow.otf");
+  src: url("../../app/fonts/Sprite Graffiti Shadow.otf");
 }
 /* end of typography */
 /* ********************use variable*******************88 */
