@@ -44,11 +44,6 @@ $susy: (
 }
 /* end of typography */
 
-body {
-	background: #ccc;
-	font-family: 'Andika';
-}
-
 /* ********************use variable*******************/
 $suka_green: #06FF00;
 /* ********************end use variable***************/
@@ -64,6 +59,7 @@ body {
 	background: #B8B3B3 url('../img/cover_photo_291189_1426039340.png');
 	font-family: 'Andika';
 	color: #fff;
+	a, a:hover {text-decoration: none;}
 }
 
 #container {
@@ -94,14 +90,13 @@ body {
 				margin-left: 200px;
 				margin-bottom: 10px;
 				font-family: 'Scratch';
-				font-size: 1em;
+				font-size: 1.2em;
 			}
 		}
 
 		#contacts {
 			@include span(12);
 			@include clearfix;
-			//margin-top: 15px;
 			h2 {
 				font-size: 0.8em;
 				margin-left: 10px;
@@ -127,26 +122,182 @@ body {
 			background: url('../img/logo2.png') no-repeat;
 			h1 {
 				margin-left: 120px;
-				margin-top: 40px;
+				margin-top: 20px;
 				font-family: 'Scratch';
 			}
 			h2{
-				margin-left: 170px;
-				margin-bottom: 20px;
+				margin-left: 210px;
+				margin-bottom: 10px;
 				font-family: 'Scratch';
-			}
-			a {
-				color: #fff;
-				text-decoration: none;
-				font-size: 1em;
-				margin-right: 20px;
-				padding: 0 10px;
 			}
 		}
 
 		#contacts {
 			@include span(6 last);
 			margin-top: 15px;
+			h2 {
+				font-size: 1em;
+				margin-left: 10px;
+			}
+			h3 {
+				font-size: 1em;
+				margin-left: 170px;
+			}
 		}
 	}
 }
+
+// for 320px
+
+.menu {
+	@include span(12);
+	@include clearfix;
+
+	ol, ul {
+		list-style: none;
+	}
+
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+
+	#touch-menu {
+		display: block;
+		background: #ccc;
+		@include border-radius(5px);
+		border: solid 2px $suka_green;
+		margin-top: 10px;
+		color: black;
+		text-align: center;
+	}
+
+	#touch-menu:hover {
+		background: #666;
+	}
+
+	.nav{
+		display: none;
+		@include border-radius(5px);
+		border: solid 2px $suka_green;
+	}
+
+	.nav ul {
+		list-style: none;
+	}
+
+	.nav li a{
+		display: block;
+		text-align: center;
+		color: #fff;
+	}
+
+	.nav li a:hover {
+ 		background: #ccc;
+ 		color: #444;
+ 		text-align: center;
+ 		border-left: 10px solid  $suka_green;
+ 		border-right: 10px solid  $suka_green;
+ 	}
+}
+
+// for big screen
+
+.menu {
+	@include breakpoint(720px){
+		@include span(8);
+		@include push(2);
+
+		ol, ul {
+			list-style: none;
+		}
+
+		* {
+			margin: 0;
+			padding: 0;
+			outline: none;
+		}
+
+		.nav{
+			display: table;
+			border: none;
+			width: auto;
+			margin: 0px auto;
+		}
+
+		.nav ul {
+			list-style: none;
+		}
+
+		.nav li {
+			float: left;
+			margin: 10px;
+		}
+
+		.nav li a{
+			font-size: 20px;
+			text-align: center;
+			color: #fff;
+		}
+
+		.nav li a:hover {
+	 		color: $suka_green;
+	 		background: none;
+	 		text-align: center;
+	 		border-left: none;
+	 		border-right: none;
+	 	}
+
+	 	#touch-menu {
+			display: none;
+		}
+	}
+}
+
+#stock, #stock2, #stock3{
+	@include span(10);
+	@include push(1);
+	@include clearfix;
+}
+
+// .nav,
+// #touch-menu {
+// 	//background: #3e4156;
+// }
+// .nav li {
+// 	float: left;
+// 	list-style: none;
+// }
+// .nav li a,
+// #touch-menu {
+// 	display: block;
+// 	padding: 10px 15px;
+// 	font-weight: bold;
+// 	font-size: 14px;
+// 	color: #fff;
+// }
+// .nav li a:hover,
+// #touch-menu:hover {
+// 	//background: #515572;
+// }
+
+// #touch-menu {display: none;}
+
+// @media (max-width: 768px) {
+// 	.nav {display: none;}
+// 	.nav li {float: none;}
+// 	.nav li a {
+// 		border-top: 1px solid #eee;
+// 		border-left: 3px solid transparent;
+// 		background: #fff;
+// 		color: #666;
+// 	}
+// 	.nav li:first-child a {border-top: none;}
+// 	.nav li a:hover {
+// 		background: #f0f0f0;
+// 		color: #444;
+// 		border-left: 3px solid #515572;
+// 	}
+// 	#touch-menu {display: block;}
+// }
