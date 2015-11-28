@@ -19,7 +19,7 @@ $susy: (
 	global-box-sizing: border-box,
 
   debug: (
-    image: show,
+    image: hide,
     color: rgba(#66f, .25),
     output: overlay,
     toggle: top right,
@@ -40,7 +40,12 @@ $susy: (
 
 @font-face {
     font-family: 'Scratch';
-    src: url( '../fonts/Sprite Graffiti Shadow.otf');
+    src: url("../fonts/Scratch.ttf");
+}
+
+@font-face {
+    font-family: 'My';
+    src: url( '../fonts/FrederickatheGreat-Regular.ttf');
 }
 /* end of typography */
 
@@ -56,10 +61,15 @@ $suka_green: #06FF00;
 
 body {
 	margin: 20px auto;
-	background: #B8B3B3 url('../img/cover_photo_291189_1426039340.png');
+	background: url('../img/background.jpg') #0E0E0E;
 	font-family: 'Andika';
 	color: #fff;
 	a, a:hover {text-decoration: none;}
+
+}
+
+p {
+	text-align: justify;
 }
 
 #container {
@@ -78,18 +88,22 @@ body {
 		#logo {
 			@include span(12);
 			@include clearfix;
-			padding-left: 10px;
+			margin-left: 10px;
 			height: 105px;
 			background: url('../img/logo2.png') no-repeat;
 			h1 {
 				margin-left: 120px;
 				margin-top: 10px;
-				font-family: 'Scratch';
+				font-family: 'My';
+				span{
+					color: $suka_green;
+					font-family: 'Scratch';
+				}
 			}
 			h2 {
 				margin-left: 200px;
 				margin-bottom: 10px;
-				font-family: 'Scratch';
+				font-family: 'My';
 				font-size: 1.2em;
 			}
 		}
@@ -98,22 +112,126 @@ body {
 			@include span(12);
 			@include clearfix;
 			h2 {
+				float: right;
+				clear: both;
+				margin-right: 100px;
 				font-size: 0.8em;
-				margin-left: 10px;
+				font-family: 'My';
 			}
 			h3 {
+				float: right;
+				clear: both;
 				font-size: 0.8em;
-				margin-left: 170px;
+				margin: 0 10px 10px 0;
 			}
 		}
+		#social{
+		@include span(8);
+		@include push(2);
+		float: none;
+		display: table;
+		width: auto;
+		margin: 10px auto;
+		.icon {
+			width: 50px;
+			height: 50px;
+			display: inline-block;
+			@include border-radius(5px);
+			a{
+				display: block;
+				height:50px;
+			}
+		}
+		.vk{
+			background: url('../img/vk_gray.png') no-repeat;
+		}
+		.vk:hover{
+			background: url('../img/vk.png') no-repeat;
+		}
+		.odnoklassniki{
+			background: url('../img/odnoklassniki_gray.png') no-repeat;
+		}
+		.odnoklassniki:hover{
+			background: url('../img/odnoklassniki.png') no-repeat;
+		}
+		.instagramm{
+			background: url('../img/instagram_gray.png') no-repeat;
+		}
+		.instagramm:hover{
+			background: url('../img/instagram.png') no-repeat;
+		}
+	}
 }
 
 #header {
-	@include breakpoint(720px){
+		@include breakpoint(470px){
 		@include span(12);
 		@include clearfix;
 		border-bottom: 2px solid $suka_green;
-		padding-bottom: 20px;
+
+		#logo {
+			@include span(8 of 12);
+			@include clearfix;
+			margin-left: 10px;
+			height: 105px;
+			background: url('../img/logo2.png') no-repeat;
+			h1 {
+				margin-left: 120px;
+				margin-top: 10px;
+				font-family: 'My';
+				span{
+					color: $suka_green;
+				}
+			}
+			h2 {
+				margin-left: 180px;
+				margin-bottom: 10px;
+				font-family: 'My';
+				font-size: 1.2em;
+			}
+		}
+
+		#contacts {
+			@include span(8 of 12);
+			@include clearfix;
+			h2 {
+				float: right;
+				clear: both;
+				margin-right: 90px;
+				font-size: 0.8em;
+				font-family: 'My';
+			}
+			h3 {
+				float: right;
+				clear: both;
+				font-size: 0.8em;
+				margin: 0 10px 10px 0;
+			}
+		}
+		#social{
+		@include span(4 of 12 last);
+		@include push(2);
+		float: none;
+		display: table;
+		width: auto;
+		margin: 10px 20px 5px auto;
+		.icon {
+			width: 50px;
+			height: 50px;
+			float: right;
+			clear: both;
+			display: block;
+			@include border-radius(5px);
+		}
+	}
+	}
+}
+
+#header {
+	@include breakpoint(610px){
+		@include span(12);
+		@include clearfix;
+		border-bottom: 2px solid $suka_green;
 
 		#logo {
 			@include span(6);
@@ -123,27 +241,117 @@ body {
 			h1 {
 				margin-left: 120px;
 				margin-top: 20px;
-				font-family: 'Scratch';
+				font-family: 'My';
+				span{
+					color: $suka_green;
+				}
 			}
 			h2{
-				margin-left: 210px;
+				margin-left: 170px;
 				margin-bottom: 10px;
-				font-family: 'Scratch';
+				font-family: 'My';
 			}
 		}
 
 		#contacts {
-			@include span(6 last);
+			@include span(4.5);
 			margin-top: 15px;
+			margin-right: 0;
+			
 			h2 {
-				font-size: 1em;
-				margin-left: 10px;
+				float: right;
+				clear: both;
+				margin-right: 0;
+				font-size: 0.8em;
+				font-family: 'My';
 			}
 			h3 {
-				font-size: 1em;
-				margin-left: 170px;
+				float: right;
+				clear: both;
+				font-size: 0.8em;
+				margin: 0;
 			}
 		}
+		#social{
+		@include span(1.5 last);
+		//float: none;
+		display: table;
+		width: auto;
+		margin: 10px auto;
+		padding-right: 5px;
+		.icon {
+			width: 50px;
+			height: 50px;
+			float: right;
+			clear: both;
+			//display: inline-block;
+			@include border-radius(5px);
+		}
+	}
+	}
+}
+///////////////////////////////////////////
+#header {
+	@include breakpoint(715px){
+		@include span(12);
+		@include clearfix;
+		border-bottom: 2px solid $suka_green;
+
+		#logo {
+			@include span(6);
+			padding-left: 10px;
+			height: 105px;
+			background: url('../img/logo2.png') no-repeat;
+			h1 {
+				margin-left: 120px;
+				margin-top: 20px;
+				font-family: 'My';
+				span{
+					color: $suka_green;
+				}
+			}
+			h2{
+				margin-left: 210px;
+				margin-bottom: 10px;
+				font-family: 'My';
+			}
+		}
+
+		#contacts {
+			@include span(4.5);
+			margin-top: 15px;
+			margin-right: 0;
+			
+			h2 {
+				float: right;
+				clear: both;
+				margin-right: 0;
+				font-size: 1em;
+				font-family: 'My';
+			}
+			h3 {
+				float: right;
+				clear: both;
+				font-size: 1em;
+				margin: 0;
+			}
+		}
+		#social{
+		@include span(1.5 last);
+		//float: none;
+		display: table;
+		width: auto;
+		margin: 10px auto;
+		padding-right: 5px;
+		.icon {
+			width: 50px;
+			height: 50px;
+			float: right;
+			clear: both;
+			//display: inline-block;
+			@include border-radius(5px);
+		}
+	}
 	}
 }
 
@@ -165,11 +373,11 @@ body {
 
 	#touch-menu {
 		display: block;
-		background: #ccc;
+		background: transparent;
 		@include border-radius(5px);
 		border: solid 2px $suka_green;
 		margin-top: 10px;
-		color: black;
+		color: $suka_green;
 		text-align: center;
 	}
 
@@ -205,7 +413,7 @@ body {
 // for big screen
 
 .menu {
-	@include breakpoint(720px){
+	@include breakpoint(560px){
 		@include span(8);
 		@include push(2);
 
@@ -224,6 +432,7 @@ body {
 			border: none;
 			width: auto;
 			margin: 0px auto;
+			border-bottom: solid 2px $suka_green;
 		}
 
 		.nav ul {
@@ -255,49 +464,88 @@ body {
 	}
 }
 
-#stock, #stock2, #stock3{
+.up{
+	display: table;
+	width: auto;
+	margin: 5px auto;
+	border: solid 2px $suka_green;
+	@include border-radius(5px);
+	padding: 0 5px 0 5px;
+	a{
+		color: #fff;
+	}
+	a:hover{
+		color: #444;
+	}
+}
+
+.up:hover{
+	background: #ccc;
+}
+
+#slider{
+	@include span(12);
+	@include clearfix;
+	margin-top: 20px;
+	img{
+		@include border-radius(5px);
+	}
+	.cycle-pager-active{
+		background: $suka_green;
+		@include border-radius(50%);
+	}
+}
+
+
+#stock, #about, #quests, #adress,{
 	@include span(10);
 	@include push(1);
 	@include clearfix;
 }
 
-// .nav,
-// #touch-menu {
-// 	//background: #3e4156;
-// }
-// .nav li {
-// 	float: left;
-// 	list-style: none;
-// }
-// .nav li a,
-// #touch-menu {
-// 	display: block;
-// 	padding: 10px 15px;
-// 	font-weight: bold;
-// 	font-size: 14px;
-// 	color: #fff;
-// }
-// .nav li a:hover,
-// #touch-menu:hover {
-// 	//background: #515572;
-// }
+#quests{
+	.quest1{
+		margin-top: 20px;
+		@include span(12);
+	}
+	.quest2{
+		margin-top: 0px;
+		@include span(12);
+		.up{
+			display: table;
+			margin-bottom: 20px;
+		}
+	}
+	img{
+		width: 100%;
+		height:auto;
+		@include border-radius(5px);
+	}
+}
 
-// #touch-menu {display: none;}
+#quests{
+	.quest1{
+		@include breakpoint(676px){
+			margin-top: 20px;
+			@include span(5 of 10);
+		}
+	}
+	.quest2{
+		@include breakpoint(676px){
+			.up{
+				display: none;
+			}
+			margin-top: 20px;
+			@include span(5 of 10 last);
+		}
+	}
+	img{
+		width: 100%;
+		height:auto;
+		@include border-radius(5px);
+	}
+}
 
-// @media (max-width: 768px) {
-// 	.nav {display: none;}
-// 	.nav li {float: none;}
-// 	.nav li a {
-// 		border-top: 1px solid #eee;
-// 		border-left: 3px solid transparent;
-// 		background: #fff;
-// 		color: #666;
-// 	}
-// 	.nav li:first-child a {border-top: none;}
-// 	.nav li a:hover {
-// 		background: #f0f0f0;
-// 		color: #444;
-// 		border-left: 3px solid #515572;
-// 	}
-// 	#touch-menu {display: block;}
-// }
+
+
+

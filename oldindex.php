@@ -74,7 +74,7 @@ $doc->addStyleSheet($this->baseurl . '/templates/' . $this->template . '/app/css
 				<jdoc:include type="modules" name="position-1"/>
 				</div>
 			</div>
-			<div id="social">
+			<div id="social"
 				<div class="icon vk"><a href="#"><img src="<?= JUri::base(TRUE) . "/templates/" . $doc->template;?>/app/img/vk.png" height="50" width="50"></a></div>
 				<div class="icon odnoklassniki"><a href="#"><img src="<?= JUri::base(TRUE) . "/templates/" . $doc->template;?>/app/img/odnoklassniki.png" height="50" width="50"></a></div>
 				<div class="icon instagramm"><a href="#"><img src="<?= JUri::base(TRUE) . "/templates/" . $doc->template;?>/app/img/instagram.png" height="50" width="50"></a></div>

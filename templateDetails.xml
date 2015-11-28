@@ -10,6 +10,7 @@
 	<description>TPL_BUNKER_XML_DESCRIPTION</description>
 	<files>
 		<filename>index.php</filename>
+		<filename>oldindex.php</filename>
 		<filename>.gitignore</filename>
 		<filename>.bowerrc</filename>
 		<filename>gulpfile.js</filename>
@@ -19,6 +20,8 @@
 		<folder>app</folder>
 		<folder>html</folder>
 		<folder>language</folder>
+		<folder>.git</folder>
+		<folder>node_modules</folder>
 	</files>
 	<positions>
 		<position>position-0</position>

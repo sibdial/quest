@@ -8,7 +8,7 @@ jQuery(document).ready(function(){
 		    });
 		    jQuery(window).resize(function(){
 		        var wid = jQuery(window).width();
-		        if(wid > 720 && menu.is(':hidden')) {
+		        if(wid > 560 && menu.is(':hidden')) {
 		            menu.removeAttr('style');
 		        }
 		    });
